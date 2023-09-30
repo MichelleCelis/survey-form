@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Bungee+Shade&family=Space+Mono&display=swap');
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     width: 100%;
     height: 100vh;
@@ -17,35 +22,77 @@ body {
     object-fit: cover;
 }
 
-h1 {
+.planet {
+    position: relative;
+    z-index: 0;
+    transform: scale(1.5);
+    top: -50px;
+}
+
+.planet2 {
+    position: relative;
+    z-index: 0;
+    transform: scale(1);
+    top: -800px;
+    left: 820px;
+}
+
+.planet3 {
+    position: relative;
+    z-index: 0;
+    transform: scale(1.2);
+    top: 1200px;
+    left: 250px;
+}
+
+.planet4 {
+    position: relative;
+    z-index: 3;
+    transform: scale(1.6);
+    top: 1700px;
+    left: 20px;
+}
+
+.rocket {
+    position: relative;
+    z-index: 3;
+    transform: scale(0.5);
+    top: 2200px;
+    left: 600px;
+}
+
+
+h1, h3 {
     margin: 1em auto;
     text-align: center;
     color: #e38832;
     font-family: 'Atomic Age', cursive;    
     font-size: 8vw;  
     padding-top: 1.5em;
+    z-index: 4;
+    position: relative;
+}
+
+h3 {
+    font-size: 6vw;
 }
 
 .main {
+    position: relative;
     background-color: #f6dcb3;
     margin: 4em 35em 4em;
     border-radius: 1%;
-}
-
-.rocket {
-    color:#e38832;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+    z-index: 2;
 }
 
 h2, p {
+    position: relative;
     margin: 1em auto;
     text-align: center;
     color: #e38832;
     font-family: 'Atomic Age', cursive;    
     font-size: 4vw;
+    z-index: 4;
 }
 
 p {
@@ -132,4 +179,55 @@ a:visited {
   
   a:active {
     color: #be4737;
+  }
+
+  .bottom {
+    background-color: #30495f;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+h3 {
+    position: relative;
+    font-size: 6vw;
+    top: 600px;
+    padding-bottom: 4em;
+    z-index: 0;
+}
+
+.floor {
+    position: relative;
+    z-index: 1;
+    transform: scale(1);
+    top: 50px;
+}
+
+.footer {
+    position: relative;
+    z-index: 5;
+}
+
+.foot {
+    position: relative;
+    z-index: 5;
+    top: 950px;
+    
+}
+
+.footer-link {
+    text-decoration: none;
+    color:#e38832;
+}
+
+.footer-link:visited {
+    color: #e38832;
+  }
+  
+.footer-link:hover {
+    color: #ffffff;
+  }
+  
+.footer-link:active {
+    color: #e38832;
   }
