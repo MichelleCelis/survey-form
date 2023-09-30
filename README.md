@@ -23,13 +23,13 @@ Improvement:
 
 --Credits for images--
 
-**Planets**
+**Planets**:
 Victoruler (Flaticon)
 
-**Rocket**
+**Rocket**:
 DinosoftLabs (Flaticon)
 
-**Floor**
+**Floor**:
 Freepik
 
 
