@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <main>
+    <h1 id="title">INTERGALACTIC IMMIGRATION</h1>
+    <p id="description">YOUR NEW PLANET AWAITS</p>
+    <!--<hr class="top-line">-->
+
+    <section class="main">
+    <form method="post" action="" id="survey-form">
+
+        <fieldset>
+            <label for="name" id="name-label">Enter Your Name: <input id="name" name="name" type="text" placeholder="Jane Doe" required /></label>
+            <label for="email" id="email-label">Enter Your Email: <input id="email" name="email" type="email" placeholder="JaneDoe@email.com" required /></label>
+            <label for="new-password" id="password-label">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" placeholder="Password" required /></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Have you ever lived in a challenging environment?</legend>
+            <label for="yes"><input id="yes" name="yes-no" type="radio" class="inline" value="yes" required /> Yes</label>
+            <label for="no"><input id="no" name="yes-no" type="radio" class="inline" value="no" required /> No</label>
+            <label for="terms-and-conditions"><input id="terms-and-conditions" name="terms-and-conditions" type="checkbox" class="inline" value="terms-and-conditions" required />I accept the <a href="">terms and conditions</a>.</label>
+            <label for="sure"><input id="sure" name="sure" type="checkbox" class="inline" value="sure" required />Are you <em>sure<em>?</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>What planet would you like to live on?</legend>
+            <label for="mars"><input id="mars" type="checkbox" name="planet" class="inline" value="mars"> Mars</label>
+            <label for="venus"><input id="venus" type="checkbox" name="planet" class="inline" value="venus"> Venus</label>
+            <label for="saturn"><input id="saturn" type="checkbox" name="planet" class="inline" value="saturn"> Saturn</label>
+          </fieldset>
+
+        <fieldset>
+            <label for="resume">Attach Your Earthly Resume: <input id="resume" type="file" name="file" /></label>
+            <label for="age">Input Your Earth Age (years): <input id="age" type="number" name="age" min="18" max="120" /></label>
+            <label for="pet">What is your preferred Earthly pet?
+              <select id="pet" name="pet">
+                <option value="">(select one)</option>
+                <option value="1">Dog</option>
+                <option value="2">Cat</option>
+                <option value="3">Hamster</option>
+                <option value="4">Other</option>
+              </select>
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <label for="pitch">Why would you like to be a space colonist?
+              <textarea id="pitch" name="pitch" rows="3" cols="30" placeholder="I want to meet aliens..."></textarea>
+            </label>
+        </fieldset>
+
+        <input type="submit" value="Submit" id="submit" />
+        <img class="rocket" src="img/rocket.svg" alt="rocket icon"/>
+
+        </main>
+        </form>
+    </section>
+</body>
+</html>
