@@ -1,11 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Bungee+Shade&family=Space+Mono&display=swap');
+
 body {
     width: 100%;
     height: 100vh;
     margin: 0;
     background-color: #30495f;
     color: #30495f;
-    font-family: Tahoma;
+    font-family: 'Space Mono', monospace;
     font-size: 16px;
+}
+
+.hero {
+    background-color: #30495f;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+h1 {
+    margin: 1em auto;
+    text-align: center;
+    color: #e38832;
+    font-family: 'Atomic Age', cursive;    
+    font-size: 8vw;  
+    padding-top: 1.5em;
 }
 
 .main {
@@ -22,10 +40,17 @@ body {
     margin-top: 20px;
 }
 
-h1, p {
+h2, p {
     margin: 1em auto;
     text-align: center;
     color: #e38832;
+    font-family: 'Atomic Age', cursive;    
+    font-size: 4vw;
+}
+
+p {
+    font-size: 1.5vw;
+    font-family: 'Space Mono', monospace;
 }
 
 
